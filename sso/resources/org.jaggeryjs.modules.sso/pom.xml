@@ -45,6 +45,9 @@
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
+			<Import-Package>
+                        	javax.xml.parsers; version="0.0.0"
+			</Import-Package>
                         <Export-Package>
                             org.jaggeryjs.modules.sso.common.*;
                         </Export-Package>

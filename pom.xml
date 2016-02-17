@@ -66,7 +66,7 @@
         <commons.logging.version>1.1.1</commons.logging.version>
         <commons.logging.imp.pkg.version>1.1.1</commons.logging.imp.pkg.version>
 
-        <carbon.kernel.version>4.4.1</carbon.kernel.version>
+        <carbon.kernel.version>4.4.4</carbon.kernel.version>
         <carbon.kernel.imp.pkg.version>[4.4.0, 5.0.0)</carbon.kernel.imp.pkg.version>
 
         <jaggery.version>0.11.2</jaggery.version>
@@ -90,7 +90,7 @@
         <sso.hostobjects.version>1.0.1</sso.hostobjects.version>
 
         <axis2.osgi.version>1.6.1.wso2v12</axis2.osgi.version>
-        <axiom.osgi.version>1.2.11.wso2v6</axiom.osgi.version>
+        <axiom.osgi.version>1.2.11.wso2v10</axiom.osgi.version>
         <xmlschema.osgi.version>1.4.7.wso2v3</xmlschema.osgi.version>
         <rampart.osgi.version>1.6.1.wso2v16</rampart.osgi.version>
         <wss4j.osgi.version>1.5.11.wso2v11</wss4j.osgi.version>
@@ -166,6 +166,16 @@
     </build>
 
     <repositories>
+       <repository>
+            <id>wso2.444</id>
+            <name>Apache Snapshot Repository</name>
+            <url>http://maven.wso2.org/nexus/content/repositories/orgwso2carbon-328/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
         <repository>
             <id>wso2-nexus</id>
             <name>WSO2 Internal Repository</name>
